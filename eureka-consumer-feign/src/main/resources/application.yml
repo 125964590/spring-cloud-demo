@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-consumer-ribbon
+server:
+  port: 10013
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10010/eureka
