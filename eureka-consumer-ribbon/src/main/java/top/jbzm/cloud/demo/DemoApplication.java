@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @Author jbzm
- * @Date Create on 2018/4/19 17:17
+ * @author jbzm
+ * @date Create on 2018/4/19 17:17
  */
 
 @EnableDiscoveryClient
@@ -20,9 +20,5 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
+
 }

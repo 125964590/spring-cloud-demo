@@ -1,12 +1,8 @@
 spring:
-  application:
-    name: eureka-server
-server:
-  port: 10010
+  profiles:
+    active: first
 # eureka配置
 eureka:
   instance:
     hostname: localhost
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+
