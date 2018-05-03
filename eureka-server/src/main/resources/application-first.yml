@@ -6,9 +6,9 @@ server:
 # eureka配置
 eureka:
   instance:
-    hostname: localhost   #标识注册的ip
+    hostname: eureka1   #标识注册的ip
   client:
     serviceUrl:
-      defaultZone: http://jbzm:zhengyiwoaini@localhost:10009/eureka    #向注册中心注册的节点
+      defaultZone: http://localhost:10009/eureka    #向注册中心注册的节点
   server:
     enable-self-preservation: false   #禁止使用安全检查

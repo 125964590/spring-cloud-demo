@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eureka-consumer-ribbon-hystrix
+server:
+  port: 10115
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://jbzm:zhengyiwoaini@localhost:10010/eureka,http://jbzm:zhengyiwoaini@localhost:10009/eureka

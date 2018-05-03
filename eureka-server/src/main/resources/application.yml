@@ -1,10 +1,8 @@
 spring:
   profiles:
-    active: second
+    active: first
 # eureka配置
-eureka:
-  instance:
-    hostname: localhost
+
 
 security:
   user:
