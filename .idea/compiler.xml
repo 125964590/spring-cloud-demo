@@ -9,16 +9,24 @@
         <module name="eureka-client" />
         <module name="eureka-consumer" />
         <module name="eureka-consumer-feign" />
+        <module name="eureka-consumer-reibbon-hystrix" />
         <module name="eureka-consumer-ribbon" />
         <module name="eureka-server" />
+        <module name="hystrix-dashboard" />
+        <module name="parent" />
+        <module name="turbine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-client" target="1.8" />
       <module name="eureka-consumer" target="1.8" />
       <module name="eureka-consumer-feign" target="1.8" />
+      <module name="eureka-consumer-reibbon-hystrix" target="1.8" />
       <module name="eureka-consumer-ribbon" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="hystrix-dashboard" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="turbine" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
