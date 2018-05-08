@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: first
+  application:
+    name: ${server_name}
 # eureka配置
 
 security:

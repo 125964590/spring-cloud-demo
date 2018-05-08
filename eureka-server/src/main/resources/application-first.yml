@@ -1,6 +1,4 @@
-spring:
-  application:
-    name: eureka-server   #服务名称
+
 server:
   port: 10010   #制定端口号
 # eureka配置
