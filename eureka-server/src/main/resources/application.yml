@@ -3,7 +3,6 @@ spring:
     active: first
 # eureka配置
 
-
 security:
   user:
     name: jbzm
