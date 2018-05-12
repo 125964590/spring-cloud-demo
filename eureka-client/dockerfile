@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-ADD target/${server.id}.jar app.jar
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ADD target/eureka-client.jar app.jar
+ENTRYPOINT ["java","-Djava.securitygit .egd=file:/dev/./urandom","-jar","/app.jar"]
