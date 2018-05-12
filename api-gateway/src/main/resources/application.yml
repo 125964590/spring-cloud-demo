@@ -6,12 +6,8 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://jbzm:zhengyiwoaini@localhost:10010/eureka,http://jbzm:zhengyiwoaini@localhost:10009/eureka
+      defaultZone: http://server1:10009/eureka,http://server2:10009/eureka
 zuul:
   routes:
-    api-a-url:
-      path: /api-a/**
-      serviceId: eureka-client-a
-    api-b-url:
-      path: /api-b/**
-      serviceId: eureka-client-b
+    eureka-client-a: /api-a/**
+    eureka-client-b: /api-b/**
