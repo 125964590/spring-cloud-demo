@@ -1,9 +1,14 @@
 spring:
   application:
-    name: eureka-consumer-ribbon-hystrix
+    name: eureka-consumer-feign-hystrix
 server:
-  port: 10115
+  port: 10014
 eureka:
   client:
     serviceUrl:
       defaultZone: http://server1:10009/eureka,http://server2:10009/eureka
+debug: true
+
+feign:
+  hystrix:
+    enable: true

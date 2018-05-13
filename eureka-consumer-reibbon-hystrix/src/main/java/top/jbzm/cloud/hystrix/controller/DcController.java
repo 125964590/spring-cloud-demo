@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import top.jbzm.cloud.hystrix.service.ConsumerService;
 
 import java.util.List;
 
@@ -19,9 +20,6 @@ import java.util.List;
  */
 @RestController
 public class DcController {
-    @Autowired
-    @LoadBalanced
-    private RestTemplate restTemplate;
     @Autowired
     DiscoveryClient discoveryClient;
     @Autowired
@@ -34,28 +32,13 @@ public class DcController {
 
     @GetMapping("discovery")
     public Object look() {
-        List<ServiceInstance> instances = discoveryClient.getInstances("eureka-client");
+        List<ServiceInstance> instances = discoveryClient.getInstances("eureka-client-a");
         instances.forEach(x -> {
             System.out.println(x.getHost());
             System.out.println(x.getUri());
             System.out.println(x.getPort());
         });
-        return discoveryClient.getInstances("eureka-client");
+        return discoveryClient.getInstances("eureka-client-a");
     }
 
-    @Service
-    class ConsumerService {
-        @Autowired
-        @LoadBalanced
-        private RestTemplate restTemplate;
-
-        @HystrixCommand(fallbackMethod = "fallback")
-        public String consumer() {
-            return restTemplate.getForObject("http://eureka-client/dc", String.class);
-        }
-
-        public String fallback() {
-            return "fallback";
-        }
-    }
 }

@@ -2,5 +2,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://server1:10009/eureka,http://server2:10009/eureka
+  instance:
+    prefer-ip-address: true
 server:
-  port: 10012
+  port: 10013
