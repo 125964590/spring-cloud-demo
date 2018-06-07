@@ -1,0 +1,17 @@
+server:
+  port: 11130
+spring:
+  application:
+    name: jwt-test
+  datasource:
+    username: root
+    password: Shuaizheng1995!!
+    url: jdbc:mysql://192.168.100.161:3306/jwt_test?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  jwtSecret: zhengyiwoaini
+  jwtExpirationInMs: 604800000
+
