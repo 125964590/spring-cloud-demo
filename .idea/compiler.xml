@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
+        <module name="demo" />
         <module name="eureka-client" />
         <module name="eureka-consumer" />
         <module name="eureka-consumer-feign" />
@@ -14,11 +15,13 @@
         <module name="eureka-consumer-ribbon" />
         <module name="eureka-server" />
         <module name="hystrix-dashboard" />
+        <module name="jwt-security" />
         <module name="turbine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="eureka-client" target="1.8" />
       <module name="eureka-consumer" target="1.8" />
       <module name="eureka-consumer-feign" target="1.8" />
@@ -26,6 +29,8 @@
       <module name="eureka-consumer-ribbon" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="hystrix-dashboard" target="1.8" />
+      <module name="jwt-security" target="1.8" />
+      <module name="jwt-security-demo" target="1.5" />
       <module name="parent" target="1.8" />
       <module name="turbine" target="1.8" />
     </bytecodeTargetLevel>
