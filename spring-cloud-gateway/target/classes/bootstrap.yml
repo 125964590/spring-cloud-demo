@@ -1,0 +1,31 @@
+server:
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 2048
+  servlet:
+    path: /galaxy
+  port: 11199
+spring:
+  output:
+    ansi:
+      enabled: always
+  application:
+    name: "${server_name}"
+  profiles:
+    active: ${project.environment}
+  session:
+    store-type: none
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+  cloud:
+    consul:
+      host: 192.168.100.47
+      port: 8501
+      discovery:
+        service-name: spring-cloud-gateway
+        health-check-interval: 15s
+        register-health-check: true
+        health-check-path: ${server.servlet.path}/actuator/health

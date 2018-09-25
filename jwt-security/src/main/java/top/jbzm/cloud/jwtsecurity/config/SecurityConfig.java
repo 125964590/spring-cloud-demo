@@ -1,8 +1,5 @@
 package top.jbzm.cloud.jwtsecurity.config;
 
-import com.example.polls.security.CustomUserDetailsService;
-import com.example.polls.security.JwtAuthenticationEntryPoint;
-import com.example.polls.security.JwtAuthenticationFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,12 +15,15 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import top.jbzm.cloud.jwtsecurity.security.CustomUserdDetailsService;
+import top.jbzm.cloud.jwtsecurity.security.JwtAuthenticationEntryPoint;
+import top.jbzm.cloud.jwtsecurity.security.JwtAuthenticationFilter;
 
 
 /**
- * Created by rajeevkumarsingh on 01/08/17.
- */
-
+ * @author jbzm
+ * @date 2018下午7:01
+ **/
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
@@ -33,11 +33,15 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 )
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Autowired
-    CustomUserDetailsService customUserDetailsService;
+    private final CustomUserdDetailsService customUserdDetailsService;
+
+    private final JwtAuthenticationEntryPoint unauthorizedHandler;
 
     @Autowired
-    private JwtAuthenticationEntryPoint unauthorizedHandler;
+    public SecurityConfig(CustomUserdDetailsService customUserdDetailsService, JwtAuthenticationEntryPoint unauthorizedHandler) {
+        this.customUserdDetailsService = customUserdDetailsService;
+        this.unauthorizedHandler = unauthorizedHandler;
+    }
 
     @Bean
     public JwtAuthenticationFilter jwtAuthenticationFilter() {
@@ -47,9 +51,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
         authenticationManagerBuilder
-                .userDetailsService(customUserDetailsService)
+                .userDetailsService(customUserdDetailsService)
                 .passwordEncoder(passwordEncoder());
     }
+
 
     @Bean(BeanIds.AUTHENTICATION_MANAGER)
     @Override

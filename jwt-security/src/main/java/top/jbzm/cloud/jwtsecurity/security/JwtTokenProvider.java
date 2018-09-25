@@ -4,6 +4,7 @@ import io.jsonwebtoken.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
+import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
@@ -12,11 +13,12 @@ import java.util.Date;
  * @date 2018上午8:45
  **/
 @Slf4j
+@Component
 public class JwtTokenProvider {
     @Value("${app.jwtSecret}")
     private String jwtSecret;
 
-    @Value("${jwtExpirationInMs}")
+    @Value("${app.jwtExpirationInMs}")
     private int jwtExpirationInMs;
 
     /**
@@ -32,7 +34,7 @@ public class JwtTokenProvider {
                 .setSubject(String.valueOf(principal.getId()))
                 .setExpiration(expirationTime)
                 .setIssuedAt(now)
-                .signWith(SignatureAlgorithm.ES256, jwtSecret)
+                .signWith(SignatureAlgorithm.HS512, jwtSecret)
                 .compact();
     }
 
@@ -41,7 +43,7 @@ public class JwtTokenProvider {
      * @param token token
      * @return user id
      */
-    public Long getUserIdFromJWT(String token) {
+    Long getUserIdFromJWT(String token) {
         Claims userInfo = Jwts.parser().setSigningKey(jwtSecret)
                 .parseClaimsJws(token).getBody();
         return Long.valueOf(userInfo.getSubject());
@@ -52,7 +54,7 @@ public class JwtTokenProvider {
      * @param authToken token
      * @return true/false
      */
-    public boolean validateToken(String authToken) {
+    boolean validateToken(String authToken) {
         try {
             Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(authToken);
             return true;

@@ -6,3 +6,5 @@ eureka:
     prefer-ip-address: true
 server:
   port: 10013
+
+

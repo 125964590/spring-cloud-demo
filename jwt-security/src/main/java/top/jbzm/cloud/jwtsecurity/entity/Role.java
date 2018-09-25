@@ -1,9 +1,6 @@
 package top.jbzm.cloud.jwtsecurity.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.NaturalId;
 import top.jbzm.cloud.jwtsecurity.entity.base.Base;
 
@@ -18,12 +15,12 @@ import javax.validation.constraints.Size;
 @Table(name = "role")
 @Entity
 @AllArgsConstructor
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor
 public class Role extends Base {
 
-    @NaturalId
     @Size(max = 20)
     private String roleName;
 }

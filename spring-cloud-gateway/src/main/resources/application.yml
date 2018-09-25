@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: user-center
+        uri: lb://user-center
+        predicates:
+        - Path=/uc/**
+        - Method=GET
+      discovery:
+        locator:
+          enabled: true

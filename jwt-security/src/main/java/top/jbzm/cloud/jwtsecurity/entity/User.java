@@ -1,13 +1,10 @@
 package top.jbzm.cloud.jwtsecurity.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
+import org.hibernate.validator.constraints.NotBlank;
 import top.jbzm.cloud.jwtsecurity.entity.base.Base;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 import java.util.HashSet;
 import java.util.Set;
@@ -19,6 +16,7 @@ import java.util.Set;
 @Entity
 @Table(name = "users")
 @AllArgsConstructor
+@Builder
 @Getter
 @Setter
 @NoArgsConstructor
@@ -29,10 +27,10 @@ public class User extends Base {
     private String username;
 
     @NotBlank
-    @Size(max = 20)
+    @Size(max = 100)
     private String password;
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id"))
