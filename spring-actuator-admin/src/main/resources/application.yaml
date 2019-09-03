@@ -1,0 +1,12 @@
+server:
+  port: 10088
+
+spring:
+  application:
+    name: actuator-demo
+
+eureka:
+  client:
+    service-url:
+#      test预发环境
+      defaultZone: http://AILab:PaaS@godhand-eureka-master:8761/eureka/,http://AILab:PaaS@godhand-eureka-slave1:8761/eureka/,http://AILab:PaaS@godhand-eureka-slave2:8761/eureka/

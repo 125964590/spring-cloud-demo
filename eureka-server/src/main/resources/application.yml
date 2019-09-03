@@ -1,17 +1,20 @@
+eureka:
+  instance:
+    hostname: vegas-eureka-master
+    lease-expiration-duration-in-seconds: 30
+    lease-renewal-interval-in-seconds: 10
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 3000
+    response-cache-update-interval-ms: 3000
+server:
+  port: 8761
 spring:
-  profiles:
-    active: second
   application:
-    name: ${server_name}lol
-# eureka配置
-
-security:
-  user:
-    name: jbzm
-    password: zhengyiwoaini
-  basic:
-    enabled: false
-
-
-
-
+    name: vegas-eureka-server
+  profiles:
+    active: master
+  security:
+    user:
+      name: admin
+      password: admin

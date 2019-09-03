@@ -11,9 +11,9 @@
     <name>parent</name>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-dependencies</artifactId>
-        <version>1.5.10.RELEASE</version>
+        <groupId>com.talbrain.vegas</groupId>
+        <artifactId>base-spring-cloud</artifactId>
+        <version>2.0-SNAPSHOT</version>
     </parent>
 
     <modules>
@@ -21,26 +21,11 @@
         <module>spring-cloud-gateway</module>
         <module>eureka-consumer-feign-hystrix</module>
         <module>consul-test</module>
+        <module>spring-cloud-gateway-old</module>
+        <module>spring-admin-demo</module>
+        <module>spring-actuator-admin</module>
+        <module>gateway-service</module>
     </modules>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
-    </properties>
-
-    <!-- 统一定义Spring Cloud 的版本号 -->
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Edgware.SR1</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 
 
 </project>

@@ -1,0 +1,82 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: actuator-demo
+  namespace: godhand-paas-dev
+  labels:
+    system: paas
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: actuator-demo
+  template:
+    metadata:
+      labels:
+        run: actuator-demo
+        system: paas
+    spec:
+      #测试环境使用，pod调度到指定的node
+      nodeSelector:
+        product: paas
+      tolerations:
+        - effect: NoExecute
+          key: Sys_PaaS
+          operator: Equal
+          value: paas
+      containers:
+        - name: actuator-demo-containers
+          image: harbor.platform.facethink.com/paas/paas-dev-spring-actuator-admin-demo-image:1.0-SNAPSHOT
+          imagePullPolicy: Always
+          volumeMounts:
+            - name: host-time
+              mountPath: /etc/localtime
+          ports:
+            - containerPort: 10088
+          env:
+            - name: JAVA_OPTS
+              value: "-Xmx1g -Xms1g -Xmn256m"
+          resources:
+            requests:
+              memory: 1000Mi
+            limits:
+              memory: 2000Mi
+      imagePullSecrets:
+        - name: regcred-paas-dev
+      volumes:
+        - name: host-time
+          hostPath:
+            path: /etc/localtime
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: actuator-demo
+  namespace: godhand-paas-dev
+  labels:
+    run: actuator-demo
+    system: paas
+spec:
+  ports:
+    - port: 10088
+      targetPort: 10088
+  selector:
+    run: actuator-demo
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: godhand-paas-actuator-dev
+  namespace: godhand-paas-dev
+  labels:
+    system: paas
+spec:
+  rules:
+    - host: actuator.facethink.com
+      http:
+        paths:
+          - backend:
+              serviceName: actuator-demo
+              servicePort: 10088

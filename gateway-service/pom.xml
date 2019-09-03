@@ -56,9 +56,13 @@
             <artifactId>guava</artifactId>
             <version>27.1-jre</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.talbrain.vegas.start</groupId>-->
+<!--            <artifactId>apollo-client-start</artifactId>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.talbrain.vegas.start</groupId>
-            <artifactId>apollo-client-start</artifactId>
+            <groupId>com.talbrain.vegas</groupId>
+            <artifactId>base-common</artifactId>
         </dependency>
     </dependencies>
 

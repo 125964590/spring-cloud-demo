@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ${artifactId}
+    name: gateway
   http:
     encoding:
       charset: UTF-8

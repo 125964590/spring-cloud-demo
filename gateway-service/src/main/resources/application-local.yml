@@ -1,11 +1,11 @@
 server:
-  port: 8769
+  port: 8760
   error:
     include-stacktrace: always
 eureka:
   client:
     service-url:
-      defaultZone: http://admin:DLgdhqjD48HatkOx@10.1.12.154:8761/eureka
+      defaultZone: http://admin:admin@127.0.0.1:8761/eureka
 spring:
   cloud:
     gateway:

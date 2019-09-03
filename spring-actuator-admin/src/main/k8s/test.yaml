@@ -1,0 +1,62 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: actuator-demo
+  namespace: test
+  labels:
+    system: paas
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: actuator-demo
+  template:
+    metadata:
+      labels:
+        run: actuator-demo
+        system: paas
+    spec:
+      tolerations:
+        - effect: NoExecute
+          key: Sys_PaaS
+          operator: Equal
+          value: paas
+      containers:
+        - name: actuator-demo-containers
+          image: registry-vpc.cn-beijing.aliyuncs.com/ailab-paas/paas-test-spring-actuator-admin:2.0
+          volumeMounts:
+            - name: host-time
+              mountPath: /etc/localtime
+          ports:
+            - containerPort: 10088
+          env:
+            - name: JAVA_OPTS
+              value: "-Xmx500m -Xms500m -Xmn256m"
+          resources:
+            requests:
+              memory: 500Mi
+            limits:
+              memory: 1000Mi
+      imagePullSecrets:
+        - name: godhand-regcred
+      volumes:
+        - name: host-time
+          hostPath:
+            path: /etc/localtime
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: actuator-demo
+  namespace: test
+  labels:
+    run: actuator-demo
+    system: paas
+spec:
+  type: NodePort
+  ports:
+    - port: 10088
+      targetPort: 10088
+      nodePort: 30105
+  selector:
+    run: actuator-demo

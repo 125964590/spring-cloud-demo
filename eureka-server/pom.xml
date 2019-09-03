@@ -11,9 +11,9 @@
     <description>eureka-server project for Spring Boot</description>
 
     <parent>
-        <groupId>top.jbzm.cloud</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.talbrain.vegas</groupId>
+        <artifactId>base-spring-cloud</artifactId>
+        <version>2.0-SNAPSHOT</version>
     </parent>
 
     <properties>
@@ -26,14 +26,21 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -41,12 +48,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <finalName>${server_name}</finalName>
-                    <layout>ZIP</layout>
-                    <executable>true</executable>
-                    <excludeArtifactIds>lombok</excludeArtifactIds>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>

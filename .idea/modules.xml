@@ -11,10 +11,15 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-reibbon-hystrix/eureka-consumer-reibbon-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-reibbon-hystrix/eureka-consumer-reibbon-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-ribbon/eureka-consumer-ribbon.iml" filepath="$PROJECT_DIR$/eureka-consumer-ribbon/eureka-consumer-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/jwt-security/jwt-security.iml" filepath="$PROJECT_DIR$/jwt-security/jwt-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/parent.iml" filepath="$PROJECT_DIR$/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin.iml" filepath="$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin-demo.iml" filepath="$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-admin-demo/spring-admin-demo.iml" filepath="$PROJECT_DIR$/spring-admin-demo/spring-admin-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway-old/spring-cloud-gateway (1) (top.jbzm.demo).iml" filepath="$PROJECT_DIR$/spring-cloud-gateway-old/spring-cloud-gateway (1) (top.jbzm.demo).iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,779 @@
+2019-09-03 17:09:16.130 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$697b8a44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:09:16.479 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:09:17.930 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:09:18.057 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to GATEWAY-SERVICE-DEV-NEW by app.id property from System Property
+2019-09-03 17:09:18.062 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+2019-09-03 17:09:18.238 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7b2c908b-b215-3bce-a00e-eca355475cca
+2019-09-03 17:09:18.298 [main] WARN  c.c.f.apollo.internals.ConfigServiceLocator - Located config services from apollo.configService configuration: http://10.1.12.154:8080, will not refresh config services from remote meta service!
+2019-09-03 17:09:27.376 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: application
+2019-09-03 17:09:28.389 [main] WARN  c.c.f.apollo.internals.AbstractConfigRepository - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: application, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38]]]
+2019-09-03 17:09:28.396 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: application
+2019-09-03 17:09:29.404 [main] WARN  c.c.f.apollo.internals.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: application, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38]]]
+2019-09-03 17:09:29.407 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: application
+2019-09-03 17:09:30.411 [main] WARN  c.c.f.apollo.internals.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: application, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/application?ip=10.1.12.38]]]
+2019-09-03 17:09:30.422 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 1 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D]]
+2019-09-03 17:09:30.425 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: TEST1.eureka
+2019-09-03 17:09:31.429 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 2 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D]]
+2019-09-03 17:09:31.430 [main] WARN  c.c.f.apollo.internals.AbstractConfigRepository - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: TEST1.eureka, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38]]]
+2019-09-03 17:09:31.433 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: TEST1.eureka
+2019-09-03 17:09:32.437 [main] WARN  c.c.f.apollo.internals.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: TEST1.eureka, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38]]]
+2019-09-03 17:09:32.440 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: TEST1.eureka
+2019-09-03 17:09:33.441 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 4 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: TEST1.eureka+application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D]]
+2019-09-03 17:09:33.447 [main] WARN  c.c.f.apollo.internals.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: TEST1.eureka, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/TEST1.eureka?ip=10.1.12.38]]]
+2019-09-03 17:09:33.489 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:09:33.661 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$697b8a44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-09-03 17:09:34.746 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-09-03 17:09:34.747 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-09-03 17:09:34.747 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-09-03 17:09:34.747 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-09-03 17:09:34.883 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new
+2019-09-03 17:09:35.892 [main] WARN  c.c.f.apollo.internals.AbstractConfigRepository - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: dynamic-gateway-new, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38]]]
+2019-09-03 17:09:35.903 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new
+2019-09-03 17:09:36.908 [main] WARN  c.c.f.apollo.internals.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: dynamic-gateway-new, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38]]]
+2019-09-03 17:09:36.910 [main] WARN  c.c.f.apollo.internals.RemoteConfigRepository - Load config failed, will retry in 1 SECONDS. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new
+2019-09-03 17:09:37.445 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 8 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new+TEST1.eureka+application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=10.1.12.38&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A-1%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A-1%7D%5D]]
+2019-09-03 17:09:37.922 [main] WARN  c.c.f.apollo.internals.LocalFileConfigRepository - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespace: dynamic-gateway-new, url: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38 [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/configs/GATEWAY-SERVICE-DEV-NEW/default/dynamic-gateway-new?ip=10.1.12.38]]]
+2019-09-03 17:09:37.971 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration': Unsatisfied dependency expressed through field 'externalConfigurations'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+Related cause: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'configurableEnvironmentConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2019-09-03 17:09:37.997 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-03 17:09:38.011 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration': Unsatisfied dependency expressed through field 'externalConfigurations'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:20)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1464)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1428)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:228)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:88)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:62)
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:539)
+	at org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration.configureArchaius(ArchaiusAutoConfiguration.java:117)
+	at org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration.configurableEnvironmentConfiguration(ArchaiusAutoConfiguration.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 36 common frames omitted
+2019-09-03 17:10:10.499 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bdb6a621] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:10:10.758 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:10:11.510 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:10:11.722 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:10:11.749 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:16)
+2019-09-03 17:11:06.886 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d8e1fd54] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:11:07.100 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:11:07.793 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:11:07.987 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:11:08.024 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:16)
+2019-09-03 17:11:46.239 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4da99e8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:11:46.587 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:11:47.710 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:11:47.938 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:11:47.968 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:16)
+2019-09-03 17:12:42.291 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1c57f055] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:12:43.510 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:12:44.136 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:12:44.307 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:12:44.339 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:16)
+2019-09-03 17:21:33.902 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3da59c0e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:21:34.141 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:21:34.971 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:21:35.242 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:21:35.272 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:16)
+2019-09-03 17:21:57.022 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$664ee910] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:21:57.294 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:21:58.391 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:21:58.578 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:21:58.612 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+2019-09-03 17:22:23.905 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$24001d8e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:22:24.090 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:22:24.797 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:22:25.143 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:22:25.174 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+2019-09-03 17:22:59.069 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$219d8b3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:22:59.342 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:23:00.126 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:23:00.362 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:23:00.406 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+2019-09-03 17:24:04.086 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c2b2dd84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:24:04.305 [main] INFO  c.t.v.g.GatewayServiceNewApplication - No active profile set, falling back to default profiles: default
+2019-09-03 17:24:04.981 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:24:05.141 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:24:05.163 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+2019-09-03 17:24:27.045 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$f5697869] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:24:27.311 [main] INFO  c.t.v.g.GatewayServiceNewApplication - No active profile set, falling back to default profiles: default
+2019-09-03 17:24:27.973 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:24:28.139 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:24:28.172 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+2019-09-03 17:24:37.924 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7f8d77b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:24:38.093 [main] INFO  c.t.v.g.GatewayServiceNewApplication - No active profile set, falling back to default profiles: default
+2019-09-03 17:24:38.724 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:24:38.873 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=86af49d6-2ff4-3f10-b5bf-d1d3dee281b4
+2019-09-03 17:24:38.894 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.NullPointerException: null
+	at com.talbrain.vegas.start.apollo.client.ApolloCustomConfiguration.postProcessBeanFactory(ApolloCustomConfiguration.java:43)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+2019-09-03 17:33:18.083 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$769abc5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:33:18.970 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:33:19.709 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:33:19.898 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=a8b14c6b-1460-3320-a58b-c3ec294af218
+2019-09-03 17:33:19.917 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:33:19.983 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$769abc5e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:33:20.690 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-09-03 17:33:20.690 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-09-03 17:33:20.690 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-09-03 17:33:20.691 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-09-03 17:33:20.989 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration': Unsatisfied dependency expressed through field 'externalConfigurations'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+Related cause: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'configurableEnvironmentConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2019-09-03 17:33:21.012 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-03 17:33:21.021 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration': Unsatisfied dependency expressed through field 'externalConfigurations'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1464)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1428)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:228)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:88)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:62)
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:539)
+	at org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration.configureArchaius(ArchaiusAutoConfiguration.java:117)
+	at org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration.configurableEnvironmentConfiguration(ArchaiusAutoConfiguration.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 36 common frames omitted
+2019-09-03 17:38:22.579 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$870cc78b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:38:22.781 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:38:23.606 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:38:23.772 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=a8b14c6b-1460-3320-a58b-c3ec294af218
+2019-09-03 17:38:23.791 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:38:23.865 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$870cc78b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:38:24.539 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-09-03 17:38:24.539 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-09-03 17:38:24.539 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-09-03 17:38:24.539 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-09-03 17:38:24.539 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-09-03 17:38:24.539 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-09-03 17:38:24.540 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-09-03 17:38:24.894 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration': Unsatisfied dependency expressed through field 'externalConfigurations'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+Related cause: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'configurableEnvironmentConfiguration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2019-09-03 17:38:24.917 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-03 17:38:24.924 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration': Unsatisfied dependency expressed through field 'externalConfigurations'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:843)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:67)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'configurableEnvironmentConfiguration' defined in class path resource [org/springframework/cloud/netflix/archaius/ArchaiusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1464)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1428)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1319)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1206)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1168)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.cloud.netflix.archaius.ConfigurableEnvironmentConfiguration]: Factory method 'configurableEnvironmentConfiguration' threw exception; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'artifactId' in value "${artifactId}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveNestedPlaceholders(AbstractPropertyResolver.java:228)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:88)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:62)
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:539)
+	at org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration.configureArchaius(ArchaiusAutoConfiguration.java:117)
+	at org.springframework.cloud.netflix.archaius.ArchaiusAutoConfiguration.configurableEnvironmentConfiguration(ArchaiusAutoConfiguration.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 36 common frames omitted
+2019-09-03 17:39:47.775 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$60adaa58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:39:47.935 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:556)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:502)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:469)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$6(ConfigFileApplicationListener.java:450)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$7(ConfigFileApplicationListener.java:449)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:446)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:334)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:209)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:192)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:179)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:347)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.talbrain.vegas.gatewayservicenew.GatewayServiceNewApplication.main(GatewayServiceNewApplication.java:18)
+Caused by: org.yaml.snakeyaml.scanner.ScannerException: while scanning for the next token
+found character '@' that cannot start any token. (Do not use @ for indentation)
+ in 'reader', line 3, column 11:
+        name: @artifactId@
+              ^
+
+	at org.yaml.snakeyaml.scanner.ScannerImpl.fetchMoreTokens(ScannerImpl.java:419)
+	at org.yaml.snakeyaml.scanner.ScannerImpl.checkToken(ScannerImpl.java:227)
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingValue.produce(ParserImpl.java:586)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:124)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:236)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:227)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:215)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:123)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:547)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:574)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:528)
+	... 23 common frames omitted
+2019-09-03 17:40:05.474 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec7615c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:40:05.658 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:40:06.307 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:40:06.471 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=a8b14c6b-1460-3320-a58b-c3ec294af218
+2019-09-03 17:40:06.498 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:40:06.567 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ec7615c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:40:07.182 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-09-03 17:40:07.192 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-09-03 17:40:07.193 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-09-03 17:40:07.194 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-09-03 17:40:07.194 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-09-03 17:40:07.506 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-09-03 17:40:07.506 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-03 17:40:07.510 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-09-03 17:40:07.510 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-03 17:40:08.292 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-09-03 17:40:08.733 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-09-03 17:40:08.769 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-09-03 17:40:08.965 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-09-03 17:40:08.965 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-09-03 17:40:09.085 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-09-03 17:40:09.085 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-09-03 17:40:09.390 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-09-03 17:40:09.413 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-09-03 17:40:09.619 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-09-03 17:40:09.621 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-09-03 17:40:09.623 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-03 17:40:09.627 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567503609625 with initial instances count: 0
+2019-09-03 17:40:09.628 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2019-09-03 17:40:09.628 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567503609628, current=UP, previous=STARTING]
+2019-09-03 17:40:09.630 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8769: registering service...
+2019-09-03 17:40:09.932 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8769 - registration status: 204
+2019-09-03 17:40:09.950 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-03 17:40:09.951 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY with eureka with status DOWN
+2019-09-03 17:40:09.951 [main] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567503609951, current=DOWN, previous=UP]
+2019-09-03 17:40:09.951 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8769: registering service...
+2019-09-03 17:40:09.956 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8769 - registration status: 204
+2019-09-03 17:40:09.964 [main] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-09-03 17:40:12.968 [main] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-09-03 17:40:12.979 [main] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8769 - deregister  status: 200
+2019-09-03 17:40:12.987 [main] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-09-03 17:40:12.992 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8769 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8769 or configure this application to listen on another port.
+
+2019-09-03 17:43:03.801 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c25524f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:43:04.063 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-09-03 17:43:04.818 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-03 17:43:04.988 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=a8b14c6b-1460-3320-a58b-c3ec294af218
+2019-09-03 17:43:05.006 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:43:05.074 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c25524f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-03 17:43:05.741 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-09-03 17:43:05.742 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-09-03 17:43:05.743 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-09-03 17:43:05.743 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-09-03 17:43:05.743 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-09-03 17:43:05.743 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-09-03 17:43:06.035 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-09-03 17:43:06.036 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-03 17:43:06.040 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-09-03 17:43:06.040 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-09-03 17:43:06.561 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-09-03 17:43:06.944 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-09-03 17:43:06.984 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-09-03 17:43:07.165 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-09-03 17:43:07.165 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-09-03 17:43:07.269 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-09-03 17:43:07.270 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-09-03 17:43:07.598 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-09-03 17:43:07.625 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-09-03 17:43:07.800 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-09-03 17:43:07.802 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-09-03 17:43:07.804 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-09-03 17:43:07.811 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1567503787808 with initial instances count: 0
+2019-09-03 17:43:07.813 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY with eureka with status UP
+2019-09-03 17:43:07.814 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567503787814, current=UP, previous=STARTING]
+2019-09-03 17:43:07.816 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8760: registering service...
+2019-09-03 17:43:07.871 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8760 - registration status: 204
+2019-09-03 17:43:08.099 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8760
+2019-09-03 17:43:08.102 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8760
+2019-09-03 17:43:08.104 [main] INFO  c.t.v.g.GatewayServiceNewApplication - Started GatewayServiceNewApplication in 5.552 seconds (JVM running for 6.352)
+2019-09-03 17:43:15.876 [reactor-http-nio-3] ERROR o.s.b.a.w.r.error.AbstractErrorWebExceptionHandler - [14b90c37] 500 Server Error for HTTP GET "/favicon.ico"
+org.springframework.web.server.ResponseStatusException: 404 NOT_FOUND
+	at org.springframework.web.reactive.resource.ResourceWebHandler.lambda$handle$0(ResourceWebHandler.java:325)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:44)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3710)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onComplete(FluxSwitchIfEmpty.java:75)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onComplete(MonoFlatMap.java:174)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onComplete(MonoNext.java:96)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:360)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:212)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:139)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:63)
+	at reactor.core.publisher.FluxConcatMap.subscribe(FluxConcatMap.java:121)
+	at reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3710)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:76)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.innerNext(FluxConcatMap.java:275)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:849)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:121)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2066)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.request(FluxMapFuseable.java:162)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:1874)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:1748)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onSubscribe(FluxMapFuseable.java:90)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.MonoMapFuseable.subscribe(MonoMapFuseable.java:59)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3710)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:442)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:212)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:139)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:63)
+	at reactor.core.publisher.FluxConcatMap.subscribe(FluxConcatMap.java:121)
+	at reactor.core.publisher.MonoNext.subscribe(MonoNext.java:40)
+	at reactor.core.publisher.MonoSwitchIfEmpty.subscribe(MonoSwitchIfEmpty.java:44)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:150)
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1510)
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:247)
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:329)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2066)
+	at reactor.core.publisher.MonoZip$ZipInner.onSubscribe(MonoZip.java:318)
+	at reactor.core.publisher.MonoJust.subscribe(MonoJust.java:54)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3710)
+	at reactor.core.publisher.MonoZip.subscribe(MonoZip.java:128)
+	at reactor.core.publisher.MonoFlatMap.subscribe(MonoFlatMap.java:60)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoPeekTerminal.subscribe(MonoPeekTerminal.java:61)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:74)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.MonoPeekTerminal.subscribe(MonoPeekTerminal.java:61)
+	at reactor.core.publisher.MonoOnErrorResume.subscribe(MonoOnErrorResume.java:44)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:3710)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.drain(MonoIgnoreThen.java:172)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:56)
+	at reactor.core.publisher.MonoPeekFuseable.subscribe(MonoPeekFuseable.java:70)
+	at reactor.core.publisher.MonoPeekTerminal.subscribe(MonoPeekTerminal.java:61)
+	at reactor.netty.http.server.HttpServerHandle.onStateChange(HttpServerHandle.java:64)
+	at reactor.netty.tcp.TcpServerBind$ChildObserver.onStateChange(TcpServerBind.java:226)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:442)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:91)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:161)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:323)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:297)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1408)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:930)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:682)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:617)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:534)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:906)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at java.lang.Thread.run(Thread.java:748)
+2019-09-03 17:43:37.805 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-09-03 17:43:37.805 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-09-03 17:43:37.805 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-09-03 17:43:37.806 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-09-03 17:43:37.806 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-09-03 17:43:37.806 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: false
+2019-09-03 17:43:37.806 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-09-03 17:43:37.837 [DiscoveryClient-CacheRefreshExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-09-03 17:48:07.646 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-09-03 17:48:21.600 [Thread-17] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY with eureka with status DOWN
+2019-09-03 17:48:21.601 [Thread-17] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1567504101601, current=DOWN, previous=UP]
+2019-09-03 17:48:21.601 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8760: registering service...
+2019-09-03 17:48:21.607 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8760 - registration status: 204
+2019-09-03 17:48:21.632 [Thread-17] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-09-03 17:48:24.634 [Thread-17] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-09-03 17:48:24.641 [Thread-17] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY/10.1.12.38:gateway:8760 - deregister  status: 200
+2019-09-03 17:48:24.661 [Thread-17] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
