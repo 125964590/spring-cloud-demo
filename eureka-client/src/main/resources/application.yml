@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://server1:10009/eureka,http://server2:10009/eureka
+      defaultZone: http://admin:DLgdhqjD48HatkOx@10.1.12.154:8761/eureka
   instance:
     prefer-ip-address: true
 server:

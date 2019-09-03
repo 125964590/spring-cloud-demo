@@ -6,33 +6,40 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-gateway" />
         <module name="demo" />
-        <module name="eureka-client" />
         <module name="eureka-consumer" />
-        <module name="eureka-consumer-feign" />
-        <module name="eureka-consumer-reibbon-hystrix" />
         <module name="eureka-consumer-ribbon" />
+        <module name="eureka-client" />
+        <module name="eureka-consumer-feign-hystrix" />
+        <module name="eureka-consumer-feign" />
+        <module name="api-gateway" />
         <module name="eureka-server" />
         <module name="hystrix-dashboard" />
+        <module name="eureka-consumer-reibbon-hystrix" />
+        <module name="consul-test" />
         <module name="jwt-security" />
-        <module name="turbine" />
+        <module name="spring-cloud-gateway" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api-gateway" target="1.8" />
-      <module name="demo" target="1.8" />
-      <module name="eureka-client" target="1.8" />
-      <module name="eureka-consumer" target="1.8" />
-      <module name="eureka-consumer-feign" target="1.8" />
-      <module name="eureka-consumer-reibbon-hystrix" target="1.8" />
-      <module name="eureka-consumer-ribbon" target="1.8" />
-      <module name="eureka-server" target="1.8" />
-      <module name="hystrix-dashboard" target="1.8" />
+    <bytecodeTargetLevel target="8">
+      <module name="api-gateway" target="1.5" />
+      <module name="consul-test" target="8" />
+      <module name="demo" target="1.5" />
+      <module name="eureka-consumer" target="1.5" />
+      <module name="eureka-consumer-feign" target="1.5" />
+      <module name="eureka-consumer-feign-hystrix" target="1.5" />
+      <module name="eureka-consumer-reibbon-hystrix" target="8" />
+      <module name="eureka-consumer-ribbon" target="8" />
+      <module name="eureka-server" target="1.5" />
+      <module name="hystrix-dashboard" target="1.5" />
       <module name="jwt-security" target="1.8" />
-      <module name="jwt-security-demo" target="1.5" />
-      <module name="parent" target="1.8" />
-      <module name="turbine" target="1.8" />
+      <module name="parent" target="1.5" />
+      <module name="spring-cloud-gateway" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jwt-security" options="-parameters" />
+    </option>
   </component>
 </project>

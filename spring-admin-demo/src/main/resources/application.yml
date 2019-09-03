@@ -1,0 +1,15 @@
+spring:
+  security:
+    user:
+      name: admin
+      password: admin
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:DLgdhqjD48HatkOx@10.1.12.154:8761/eureka
+  instance:
+    metadata-map:
+      user.name: "admin"
+      user.password: "admin"

@@ -1,0 +1,13 @@
+server:
+  port: 10011
+# eureka配置
+eureka:
+  instance:
+    hostname: server3
+  client:
+    serviceUrl:
+      defaultZone:  http://39.107.112.223:8768/eureka/
+  server:
+    enable-self-preservation: false
+
+

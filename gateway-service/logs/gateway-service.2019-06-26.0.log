@@ -1,0 +1,541 @@
+2019-06-26 00:01:48.200 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 120 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new+TEST1.eureka+application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D]]
+2019-06-26 00:02:44.276 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:04:48.213 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 120 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new+TEST1.eureka+application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A549%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D]]
+2019-06-26 00:07:22.205 [Apollo-Config-3] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d5a5463] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:07:26.595 [Apollo-Config-3] INFO  org.springframework.boot.SpringApplication - The following profiles are active: local
+2019-06-26 00:07:26.702 [Apollo-Config-3] INFO  org.springframework.boot.SpringApplication - Started application in 8.676 seconds (JVM running for 2268.44)
+2019-06-26 00:07:37.738 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:07:40.746 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-26 00:07:40.761 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - deregister  status: 200
+2019-06-26 00:07:41.010 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-06-26 00:07:41.064 [Apollo-Config-3] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:07:41.088 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:07:41.146 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:07:41.147 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:07:41.148 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:07:41.148 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:07:42.214 [Apollo-Config-3] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:07:42.232 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:07:42.233 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:07:42.233 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:07:42.233 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:07:42.234 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:07:42.234 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:07:42.235 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:07:42.415 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:07:42.427 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:07:42.437 [Apollo-Config-3] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:07:42.453 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561478862453 with initial instances count: 10
+2019-06-26 00:07:42.480 [Apollo-Config-3] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:07:42.481 [Apollo-Config-3] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478862481, current=DOWN, previous=STARTING]
+2019-06-26 00:07:42.482 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:07:42.484 [Apollo-Config-3] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:07:42.485 [Apollo-Config-3] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478862485, current=UP, previous=DOWN]
+2019-06-26 00:07:42.488 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:07:42.488 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:07:42.491 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:07:42.532 [Apollo-Config-3] INFO  o.s.cloud.endpoint.event.RefreshEventListener - Refresh keys changed: []
+2019-06-26 00:07:42.533 [Apollo-Config-3] INFO  c.t.v.g.listener.ApolloPropertiesRefresher - [spring.cloud.gateway.routes[2].id, spring.cloud.gateway.discovery.locator.enabled, spring.cloud.gateway.routes[2].uri, spring.cloud.gateway.routes[2].predicates[0], spring.cloud.gateway.routes[2].filters[0], spring.cloud.gateway.routes[4].id, spring.cloud.gateway.routes[4].uri, spring.cloud.gateway.routes[4].filters[0], spring.cloud.gateway.routes[4].predicates[0]]
+2019-06-26 00:07:57.845 [Apollo-Config-3] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d5a5463] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:07:57.943 [Apollo-Config-3] INFO  org.springframework.boot.SpringApplication - The following profiles are active: local
+2019-06-26 00:07:57.954 [Apollo-Config-3] INFO  org.springframework.boot.SpringApplication - Started application in 0.215 seconds (JVM running for 2299.692)
+2019-06-26 00:07:58.100 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:08:01.105 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-26 00:08:01.111 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - deregister  status: 200
+2019-06-26 00:08:01.118 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-06-26 00:08:01.122 [Apollo-Config-3] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:08:01.123 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:08:01.126 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:08:01.126 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:08:01.127 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:08:01.127 [Apollo-Config-3] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:08:01.244 [Apollo-Config-3] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:08:01.245 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:08:01.245 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:08:01.245 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:08:01.246 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:08:01.246 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:08:01.246 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:08:01.246 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:08:01.396 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:08:01.397 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:08:01.398 [Apollo-Config-3] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:08:01.399 [Apollo-Config-3] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561478881399 with initial instances count: 11
+2019-06-26 00:08:01.401 [Apollo-Config-3] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:08:01.401 [Apollo-Config-3] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478881401, current=DOWN, previous=STARTING]
+2019-06-26 00:08:01.402 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:08:01.402 [Apollo-Config-3] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:08:01.402 [Apollo-Config-3] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478881402, current=UP, previous=DOWN]
+2019-06-26 00:08:01.408 [Apollo-Config-3] INFO  o.s.cloud.endpoint.event.RefreshEventListener - Refresh keys changed: []
+2019-06-26 00:08:01.409 [Apollo-Config-3] INFO  c.t.v.g.listener.ApolloPropertiesRefresher - [spring.cloud.gateway.discovery.locator.enabled]
+2019-06-26 00:08:01.409 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:08:01.409 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:08:01.413 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:08:04.487 [Thread-18] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:08:04.488 [Thread-18] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478884488, current=DOWN, previous=UP]
+2019-06-26 00:08:04.488 [Thread-18] WARN  com.netflix.discovery.InstanceInfoReplicator - Ignoring onDemand update due to rate limiter
+2019-06-26 00:08:04.514 [Thread-18] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:08:22.286 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87f5a034] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:08:22.560 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-06-26 00:08:23.471 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-26 00:08:23.566 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to GATEWAY-SERVICE-DEV-NEW by app.id property from System Property
+2019-06-26 00:08:23.568 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+2019-06-26 00:08:23.729 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7b2c908b-b215-3bce-a00e-eca355475cca
+2019-06-26 00:08:23.782 [main] WARN  c.c.f.apollo.internals.ConfigServiceLocator - Located config services from apollo.configService configuration: http://10.1.12.154:8080, will not refresh config services from remote meta service!
+2019-06-26 00:08:23.971 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:08:24.227 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$87f5a034] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-26 00:08:25.164 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-26 00:08:25.165 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-26 00:08:25.165 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-26 00:08:25.165 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-26 00:08:25.165 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-26 00:08:25.165 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-26 00:08:25.165 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-26 00:08:25.347 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:08:25.347 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:08:25.351 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:08:25.351 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:08:33.450 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$38d8fbd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:08:33.819 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-06-26 00:08:34.592 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-26 00:08:34.679 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to GATEWAY-SERVICE-DEV-NEW by app.id property from System Property
+2019-06-26 00:08:34.681 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+2019-06-26 00:08:34.827 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7b2c908b-b215-3bce-a00e-eca355475cca
+2019-06-26 00:08:34.870 [main] WARN  c.c.f.apollo.internals.ConfigServiceLocator - Located config services from apollo.configService configuration: http://10.1.12.154:8080, will not refresh config services from remote meta service!
+2019-06-26 00:08:34.983 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:08:35.065 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$38d8fbd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:08:35.823 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-26 00:08:35.824 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-26 00:08:35.825 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-26 00:08:35.825 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-26 00:08:35.825 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-26 00:08:36.004 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:08:36.004 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:08:36.008 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:08:36.008 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:08:36.524 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-26 00:08:36.973 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:08:37.006 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:08:37.193 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:08:37.194 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:08:37.313 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:08:37.314 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:08:37.505 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:08:37.530 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:08:37.531 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:08:37.531 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:08:37.531 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:08:37.531 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:08:37.531 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:08:37.531 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:08:37.846 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:08:37.849 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:08:37.851 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:08:37.853 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561478917852 with initial instances count: 11
+2019-06-26 00:08:37.855 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:08:37.855 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478917855, current=UP, previous=STARTING]
+2019-06-26 00:08:37.857 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:08:37.889 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:08:38.067 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-26 00:08:38.068 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-26 00:08:38.070 [main] INFO  c.t.v.g.GatewayServiceNewApplication - Started GatewayServiceNewApplication in 6.011 seconds (JVM running for 7.877)
+2019-06-26 00:09:00.071 [Apollo-Config-1] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$38d8fbd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:09:00.142 [Apollo-Config-1] INFO  org.springframework.boot.SpringApplication - The following profiles are active: local
+2019-06-26 00:09:00.152 [Apollo-Config-1] INFO  org.springframework.boot.SpringApplication - Started application in 0.152 seconds (JVM running for 29.959)
+2019-06-26 00:09:00.304 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:09:03.309 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-26 00:09:03.317 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - deregister  status: 200
+2019-06-26 00:09:03.327 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-06-26 00:09:03.334 [Apollo-Config-1] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:09:03.336 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:09:03.340 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:09:03.340 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:09:03.340 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:09:03.340 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:09:03.467 [Apollo-Config-1] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:09:03.468 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:09:03.621 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:09:03.622 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:09:03.623 [Apollo-Config-1] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:09:03.623 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561478943623 with initial instances count: 11
+2019-06-26 00:09:03.626 [Apollo-Config-1] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:09:03.627 [Apollo-Config-1] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478943626, current=DOWN, previous=STARTING]
+2019-06-26 00:09:03.627 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:09:03.627 [Apollo-Config-1] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:09:03.627 [Apollo-Config-1] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561478943627, current=UP, previous=DOWN]
+2019-06-26 00:09:03.635 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:09:03.636 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:09:03.639 [Apollo-Config-1] INFO  o.s.cloud.endpoint.event.RefreshEventListener - Refresh keys changed: []
+2019-06-26 00:09:03.640 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:13:16.886 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - Re-registering apps/GATEWAY-SERVICE
+2019-06-26 00:13:16.892 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:13:16.900 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:13:16.978 [Thread-19] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:13:16.979 [Thread-19] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561479196979, current=DOWN, previous=UP]
+2019-06-26 00:13:16.979 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:13:16.986 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:13:16.997 [Thread-19] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:13:17.037 [Apollo-Config-1] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$38d8fbd2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:13:28.792 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899f6c94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:13:29.045 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-06-26 00:13:29.785 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-26 00:13:29.862 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to GATEWAY-SERVICE-DEV-NEW by app.id property from System Property
+2019-06-26 00:13:29.864 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+2019-06-26 00:13:29.990 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7b2c908b-b215-3bce-a00e-eca355475cca
+2019-06-26 00:13:30.032 [main] WARN  c.c.f.apollo.internals.ConfigServiceLocator - Located config services from apollo.configService configuration: http://10.1.12.154:8080, will not refresh config services from remote meta service!
+2019-06-26 00:13:30.139 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:13:30.215 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899f6c94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:13:30.942 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-26 00:13:30.942 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-26 00:13:30.942 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-26 00:13:30.943 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-26 00:13:31.118 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:13:31.118 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:13:31.123 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:13:31.123 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:13:31.619 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-26 00:13:31.994 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:13:32.031 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:13:32.232 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:13:32.232 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:13:32.333 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:13:32.334 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:13:32.512 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:13:32.527 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:13:32.838 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:13:32.841 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:13:32.843 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:13:32.846 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561479212845 with initial instances count: 11
+2019-06-26 00:13:32.847 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:13:32.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561479212847, current=UP, previous=STARTING]
+2019-06-26 00:13:32.849 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:13:32.884 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:13:33.057 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-26 00:13:33.058 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-26 00:13:33.061 [main] INFO  c.t.v.g.GatewayServiceNewApplication - Started GatewayServiceNewApplication in 5.169 seconds (JVM running for 6.92)
+2019-06-26 00:18:48.322 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:18:48.326 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 1 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new+TEST1.eureka+application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A555%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A555%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A555%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A555%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D]]
+2019-06-26 00:18:48.336 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - Re-registering apps/GATEWAY-SERVICE
+2019-06-26 00:18:48.336 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:18:48.346 [DiscoveryClient-HeartbeatExecutor-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:18:48.422 [Apollo-Config-1] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$899f6c94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:18:48.440 [Thread-17] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:18:48.441 [Thread-17] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561479528440, current=DOWN, previous=UP]
+2019-06-26 00:18:48.441 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:18:48.447 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:18:48.461 [Thread-17] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:18:48.517 [Apollo-Config-1] INFO  org.springframework.boot.SpringApplication - The following profiles are active: local
+2019-06-26 00:18:48.540 [Apollo-Config-1] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:949)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:400)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.talbrain.vegas.gatewayservicenew.listener.ApolloPropertiesRefresher.publish(ApolloPropertiesRefresher.java:47)
+	at com.talbrain.vegas.gatewayservicenew.listener.ApolloPropertiesRefresher.onChange(ApolloPropertiesRefresher.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at com.ctrip.framework.apollo.spring.annotation.ApolloAnnotationProcessor$1.onChange(ApolloAnnotationProcessor.java:61)
+	at com.ctrip.framework.apollo.internals.AbstractConfig$2.run(AbstractConfig.java:417)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-26 00:18:48.541 [Apollo-Config-1] ERROR c.ctrip.framework.apollo.internals.AbstractConfig - Failed to invoke config change listener com.ctrip.framework.apollo.spring.annotation.ApolloAnnotationProcessor$1
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at org.springframework.context.support.AbstractApplicationContext.registerShutdownHook(AbstractApplicationContext.java:949)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:400)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:139)
+	at org.springframework.cloud.context.refresh.ContextRefresher.addConfigFilesToEnvironment(ContextRefresher.java:113)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refreshEnvironment(ContextRefresher.java:93)
+	at org.springframework.cloud.context.refresh.ContextRefresher.refresh(ContextRefresher.java:85)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.handle(RefreshEventListener.java:72)
+	at org.springframework.cloud.endpoint.event.RefreshEventListener.onApplicationEvent(RefreshEventListener.java:61)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359)
+	at com.talbrain.vegas.gatewayservicenew.listener.ApolloPropertiesRefresher.publish(ApolloPropertiesRefresher.java:47)
+	at com.talbrain.vegas.gatewayservicenew.listener.ApolloPropertiesRefresher.onChange(ApolloPropertiesRefresher.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at com.ctrip.framework.apollo.spring.annotation.ApolloAnnotationProcessor$1.onChange(ApolloAnnotationProcessor.java:61)
+	at com.ctrip.framework.apollo.internals.AbstractConfig$2.run(AbstractConfig.java:417)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-26 00:19:20.305 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a66c355] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:19:20.563 [main] INFO  c.t.v.g.GatewayServiceNewApplication - The following profiles are active: local
+2019-06-26 00:19:21.315 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-26 00:19:21.391 [main] INFO  c.c.f.f.i.provider.DefaultApplicationProvider - App ID is set to GATEWAY-SERVICE-DEV-NEW by app.id property from System Property
+2019-06-26 00:19:21.393 [main] INFO  c.c.f.f.internals.provider.DefaultServerProvider - Environment is set to [dev] by JVM system property 'env'.
+2019-06-26 00:19:21.531 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=7b2c908b-b215-3bce-a00e-eca355475cca
+2019-06-26 00:19:21.572 [main] WARN  c.c.f.apollo.internals.ConfigServiceLocator - Located config services from apollo.configService configuration: http://10.1.12.154:8080, will not refresh config services from remote meta service!
+2019-06-26 00:19:21.701 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservicenew.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:19:21.783 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a66c355] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-26 00:19:22.529 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-26 00:19:22.530 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-26 00:19:22.721 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:19:22.721 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:19:22.725 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-26 00:19:22.725 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-26 00:19:23.243 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-26 00:19:23.646 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:19:23.711 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:19:23.891 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:19:23.891 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:19:23.993 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:19:23.993 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:19:24.171 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:19:24.183 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:19:24.184 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:19:24.184 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:19:24.184 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:19:24.184 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:19:24.184 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:19:24.184 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:19:24.503 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:19:24.506 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:19:24.509 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:19:24.513 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561479564511 with initial instances count: 11
+2019-06-26 00:19:24.514 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:19:24.514 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561479564514, current=UP, previous=STARTING]
+2019-06-26 00:19:24.516 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 00:19:24.549 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration status: 204
+2019-06-26 00:19:24.727 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-26 00:19:24.729 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-26 00:19:24.731 [main] INFO  c.t.v.g.GatewayServiceNewApplication - Started GatewayServiceNewApplication in 5.497 seconds (JVM running for 7.072)
+2019-06-26 00:19:54.074 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-26 00:19:54.553 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-26 00:19:54.553 [DiscoveryClient-0] WARN  com.netflix.discovery.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+2019-06-26 00:19:54.560 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - deregister  status: 200
+2019-06-26 00:19:54.574 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-06-26 00:19:54.580 [Apollo-Config-1] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-26 00:19:54.582 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-26 00:19:54.584 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-26 00:19:54.584 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-26 00:19:54.584 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-26 00:19:54.585 [Apollo-Config-1] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-26 00:19:54.661 [Apollo-Config-1] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 00:19:54.662 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-26 00:19:54.662 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-26 00:19:54.662 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-26 00:19:54.663 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-26 00:19:54.663 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-26 00:19:54.663 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-26 00:19:54.663 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-26 00:19:54.819 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-26 00:19:54.820 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-26 00:19:54.821 [Apollo-Config-1] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-26 00:19:54.822 [Apollo-Config-1] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1561479594822 with initial instances count: 11
+2019-06-26 00:19:54.825 [Apollo-Config-1] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 00:19:54.825 [Apollo-Config-1] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561479594825, current=DOWN, previous=STARTING]
+2019-06-26 00:19:54.825 [Apollo-Config-1] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+2019-06-26 00:19:54.825 [Apollo-Config-1] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561479594825, current=UP, previous=DOWN]
+2019-06-26 00:19:54.828 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 10:21:26.272 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.apache.http.impl.client.DefaultHttpClient - I/O exception (java.net.SocketException) caught when processing request to {}->http://10.1.12.154:8761: Broken pipe (Write failed)
+2019-06-26 10:21:26.285 [DiscoveryClient-InstanceInfoReplicator-0] INFO  org.apache.http.impl.client.DefaultHttpClient - Retrying request to {}->http://10.1.12.154:8761
+2019-06-26 10:21:26.301 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-26 10:21:26.309 [Apollo-RemoteConfigLongPollService-1] WARN  c.c.f.apollo.internals.RemoteConfigLongPollService - Long polling failed, will retry in 1 seconds. appId: GATEWAY-SERVICE-DEV-NEW, cluster: default, namespaces: dynamic-gateway-new+TEST1.eureka+application, long polling url: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A557%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D, reason: java.io.IOException: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A557%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A557%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D [Cause: Server returned HTTP response code: 500 for URL: http://10.1.12.154:8080/notifications/v2?cluster=default&appId=GATEWAY-SERVICE-DEV-NEW&ip=192.168.2.1&notifications=%5B%7B%22namespaceName%22%3A%22dynamic-gateway-new%22%2C%22notificationId%22%3A557%7D%2C%7B%22namespaceName%22%3A%22TEST1.eureka%22%2C%22notificationId%22%3A514%7D%2C%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A547%7D%5D]]
+2019-06-26 10:21:26.318 [DiscoveryClient-InstanceInfoReplicator-0] ERROR c.n.d.s.t.decorator.RedirectingEurekaHttpClient - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://admin:DLgdhqjD48HatkOx@10.1.12.154:8761/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.client.ClientProtocolException
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.client.ClientProtocolException: null
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:839)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 31 common frames omitted
+Caused by: org.apache.http.client.NonRepeatableRequestException: Cannot retry request with a non-repeatable request entity.  The cause lists the reason the original request failed.
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:653)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	... 34 common frames omitted
+Caused by: java.net.SocketException: Broken pipe (Write failed)
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:160)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:168)
+	at org.apache.http.impl.io.ChunkedOutputStream.flush(ChunkedOutputStream.java:192)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1100)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2657)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:381)
+	at com.fasterxml.jackson.core.JsonGenerator.writeObjectField(JsonGenerator.java:1726)
+	at com.netflix.discovery.converters.EurekaJacksonCodec$InstanceInfoSerializer.serialize(EurekaJacksonCodec.java:371)
+	at com.netflix.discovery.converters.EurekaJacksonCodec$InstanceInfoSerializer.serialize(EurekaJacksonCodec.java:327)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:468)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:397)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1392)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at com.netflix.discovery.converters.EurekaJacksonCodec.writeTo(EurekaJacksonCodec.java:221)
+	at com.netflix.discovery.converters.wrappers.CodecWrappers$LegacyJacksonJson.encode(CodecWrappers.java:304)
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.writeTo(DiscoveryJerseyProvider.java:135)
+	at com.sun.jersey.api.client.RequestWriter$RequestEntityWriterImpl.writeRequestEntity(RequestWriter.java:231)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler$2.writeTo(ApacheHttpClient4Handler.java:289)
+	at org.apache.http.entity.HttpEntityWrapper.writeTo(HttpEntityWrapper.java:96)
+	at org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper.writeTo(EntityEnclosingRequestWrapper.java:110)
+	at org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:118)
+	at org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:274)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.sendRequestEntity(AbstractClientConnAdapter.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	... 36 common frames omitted
+	Suppressed: java.net.SocketException: Broken pipe (Write failed)
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:160)
+		at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:168)
+		at org.apache.http.impl.io.ChunkedOutputStream.close(ChunkedOutputStream.java:203)
+		at com.fasterxml.jackson.core.json.UTF8JsonGenerator.close(UTF8JsonGenerator.java:1138)
+		at com.fasterxml.jackson.databind.util.ClassUtil.closeOnFailAndThrowAsIOE(ClassUtil.java:488)
+		at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1122)
+		... 50 common frames omitted
+2019-06-26 10:21:26.320 [DiscoveryClient-InstanceInfoReplicator-0] WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient - Request execution failed with message: org.apache.http.client.ClientProtocolException
+2019-06-26 10:21:26.321 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-26 10:21:26.321 [DiscoveryClient-InstanceInfoReplicator-0] WARN  com.netflix.discovery.InstanceInfoReplicator - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-26 10:21:26.322 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/169.254.119.41:gateway-service:8769: registering service...
+2019-06-26 10:21:26.370 [Thread-17] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE with eureka with status DOWN
+2019-06-26 10:21:26.370 [Thread-17] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1561515686370, current=DOWN, previous=UP]
+2019-06-26 10:21:26.414 [Thread-17] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...

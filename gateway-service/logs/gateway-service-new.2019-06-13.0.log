@@ -1,0 +1,226 @@
+2019-06-13 21:18:13.475 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$313a5ae3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:18:13.630 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - No active profile set, falling back to default profiles: default
+2019-06-13 21:18:14.262 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-13 21:18:14.419 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=dac4c413-19b3-355a-9813-d7b251cf4fe1
+2019-06-13 21:18:14.436 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservice.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:18:14.515 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$313a5ae3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-13 21:18:14.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-13 21:18:14.962 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-13 21:18:14.962 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-13 21:18:15.049 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:18:15.050 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:18:15.055 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:18:15.055 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:18:15.587 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-13 21:18:15.934 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-13 21:18:15.985 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-13 21:18:16.387 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-13 21:18:16.388 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-13 21:18:16.563 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-13 21:18:16.563 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-13 21:18:16.730 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-13 21:18:16.752 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-13 21:18:16.970 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-13 21:18:16.972 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-13 21:18:16.974 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-13 21:18:16.976 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1560431896976 with initial instances count: 9
+2019-06-13 21:18:16.977 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE-NEW with eureka with status UP
+2019-06-13 21:18:16.978 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560431896978, current=UP, previous=STARTING]
+2019-06-13 21:18:16.979 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:18:17.020 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:18:17.207 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-13 21:18:17.208 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-13 21:18:17.210 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - Started GatewayServiceApplication in 4.775 seconds (JVM running for 5.667)
+2019-06-13 21:18:25.696 [Thread-15] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE-NEW with eureka with status DOWN
+2019-06-13 21:18:25.697 [Thread-15] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560431905697, current=DOWN, previous=UP]
+2019-06-13 21:18:25.697 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:18:25.711 [Thread-15] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-13 21:18:25.714 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:18:25.715 [Thread-15] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-13 21:18:25.728 [Thread-15] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - deregister  status: 200
+2019-06-13 21:18:25.742 [Thread-15] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-06-13 21:18:39.679 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9248cee5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:18:39.855 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - No active profile set, falling back to default profiles: default
+2019-06-13 21:18:40.774 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-13 21:18:41.055 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=dac4c413-19b3-355a-9813-d7b251cf4fe1
+2019-06-13 21:18:41.080 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservice.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:18:41.176 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9248cee5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-13 21:18:41.791 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-13 21:18:41.792 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-13 21:18:41.792 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-13 21:18:41.792 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-13 21:18:41.792 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-13 21:18:41.792 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-13 21:18:41.792 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-13 21:18:41.896 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:18:41.896 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:18:41.899 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:18:41.899 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:18:42.707 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-13 21:18:43.170 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-13 21:18:43.222 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-13 21:18:43.481 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-13 21:18:43.483 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-13 21:18:43.615 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-13 21:18:43.615 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-13 21:18:43.834 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-13 21:18:43.846 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-13 21:18:43.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-13 21:18:43.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-13 21:18:43.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-13 21:18:43.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-13 21:18:43.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-13 21:18:43.847 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-13 21:18:43.998 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-13 21:18:44.001 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-13 21:18:44.003 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-13 21:18:44.007 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1560431924006 with initial instances count: 9
+2019-06-13 21:18:44.008 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE-NEW with eureka with status UP
+2019-06-13 21:18:44.008 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560431924008, current=UP, previous=STARTING]
+2019-06-13 21:18:44.010 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:18:44.054 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:18:44.327 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-13 21:18:44.329 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-13 21:18:44.331 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - Started GatewayServiceApplication in 5.842 seconds (JVM running for 6.95)
+2019-06-13 21:19:06.574 [Thread-18] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE-NEW with eureka with status DOWN
+2019-06-13 21:19:06.575 [Thread-18] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560431946575, current=DOWN, previous=UP]
+2019-06-13 21:19:06.575 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:19:06.583 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:19:06.590 [Thread-18] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-13 21:23:47.083 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$80ba1881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:23:47.233 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - No active profile set, falling back to default profiles: default
+2019-06-13 21:23:47.775 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-13 21:23:47.924 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=dac4c413-19b3-355a-9813-d7b251cf4fe1
+2019-06-13 21:23:47.939 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservice.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:23:47.989 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$80ba1881] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:23:48.409 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-13 21:23:48.410 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-13 21:23:48.411 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-13 21:23:48.411 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-13 21:23:48.498 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:23:48.498 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:23:48.505 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:23:48.505 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:23:49.059 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-13 21:23:49.484 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-13 21:23:49.555 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-13 21:23:49.875 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-13 21:23:49.875 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-13 21:23:50.092 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-13 21:23:50.092 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-13 21:23:50.417 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-13 21:23:50.442 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-13 21:23:50.443 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-13 21:23:50.444 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-13 21:23:50.444 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-13 21:23:50.444 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-13 21:23:50.444 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-13 21:23:50.444 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-13 21:23:50.747 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-13 21:23:50.750 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-13 21:23:50.752 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-13 21:23:50.756 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1560432230755 with initial instances count: 9
+2019-06-13 21:23:50.758 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE-NEW with eureka with status UP
+2019-06-13 21:23:50.760 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560432230758, current=UP, previous=STARTING]
+2019-06-13 21:23:50.762 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:23:50.872 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:23:51.049 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-13 21:23:51.051 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-13 21:23:51.055 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - Started GatewayServiceApplication in 5.322 seconds (JVM running for 6.252)
+2019-06-13 21:28:50.467 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-13 21:29:51.725 [Thread-16] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE-NEW with eureka with status DOWN
+2019-06-13 21:29:51.726 [Thread-16] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560432591726, current=DOWN, previous=UP]
+2019-06-13 21:29:51.727 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:29:51.740 [Thread-16] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-13 21:29:51.741 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:29:51.742 [Thread-16] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-13 21:29:51.758 [Thread-16] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - deregister  status: 200
+2019-06-13 21:29:51.770 [Thread-16] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2019-06-13 21:30:11.257 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7bed4a85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:30:11.517 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - No active profile set, falling back to default profiles: default
+2019-06-13 21:30:12.382 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-06-13 21:30:12.750 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=dac4c413-19b3-355a-9813-d7b251cf4fe1
+2019-06-13 21:30:12.780 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.talbrain.vegas.gatewayservice.feign.UserDetailService' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:30:12.891 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7bed4a85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-06-13 21:30:13.760 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+2019-06-13 21:30:13.762 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2019-06-13 21:30:13.763 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+2019-06-13 21:30:13.764 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+2019-06-13 21:30:13.764 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2019-06-13 21:30:14.097 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:30:14.098 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:30:14.104 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-06-13 21:30:14.104 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-06-13 21:30:14.862 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 20 endpoint(s) beneath base path '/actuator'
+2019-06-13 21:30:15.484 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-06-13 21:30:15.564 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-06-13 21:30:15.821 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-06-13 21:30:15.821 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-06-13 21:30:15.943 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-06-13 21:30:15.943 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-06-13 21:30:16.140 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-06-13 21:30:16.157 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-06-13 21:30:16.339 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-06-13 21:30:16.342 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-06-13 21:30:16.346 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-06-13 21:30:16.352 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1560432616351 with initial instances count: 9
+2019-06-13 21:30:16.353 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application GATEWAY-SERVICE-NEW with eureka with status UP
+2019-06-13 21:30:16.355 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560432616355, current=UP, previous=STARTING]
+2019-06-13 21:30:16.357 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:30:16.397 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:30:16.573 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer - Netty started on port(s): 8769
+2019-06-13 21:30:16.575 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8769
+2019-06-13 21:30:16.577 [main] INFO  c.t.vegas.gatewayservice.GatewayServiceApplication - Started GatewayServiceApplication in 6.398 seconds (JVM running for 7.957)
+2019-06-13 21:32:43.468 [Thread-19] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Unregistering application GATEWAY-SERVICE-NEW with eureka with status DOWN
+2019-06-13 21:32:43.472 [Thread-19] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1560432763471, current=DOWN, previous=UP]
+2019-06-13 21:32:43.473 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769: registering service...
+2019-06-13 21:32:43.492 [Thread-19] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2019-06-13 21:32:43.503 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - registration status: 204
+2019-06-13 21:32:43.504 [Thread-19] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2019-06-13 21:32:43.518 [Thread-19] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE-NEW/10.1.29.136:gateway-service-new:8769 - deregister  status: 200
+2019-06-13 21:32:43.529 [Thread-19] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient

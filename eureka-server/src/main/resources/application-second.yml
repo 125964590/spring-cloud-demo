@@ -1,13 +1,12 @@
-
 server:
-  port: 10009
+  port: 10010
 # eureka配置
 eureka:
   instance:
-    hostname: server2
+    hostname: server2lol
   client:
     serviceUrl:
-      defaultZone: http://server1:10009/eureka
+      defaultZone: http://39.107.112.223:8768/eureka/
   server:
     enable-self-preservation: false
 

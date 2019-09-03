@@ -1,0 +1,89 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: vegas-gateway-test
+  namespace: vegas-test
+spec:
+  replicas: ^replicas^
+  selector:
+    matchLabels:
+      run: vegas-gateway-test
+  template:
+    metadata:
+      labels:
+        run: vegas-gateway-test
+    spec:
+      nodeSelector:
+        node/cpuservice: vegas
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: vegas-gateway-test-containers
+        image: docker.registry:30018/vegas/gateway-service:^image^
+        ports:        
+        - containerPort: 9091
+        env:
+        - name: JAVA_OPTS
+          value: "-Denv=fat -Dfat_meta=http://vegas-apollo-configservice-fat:8768/ -Dapp.id=gateway_k8s -server"
+        volumeMounts:
+        - name: app-log
+          mountPath: /logs   #容器log路径
+        - name: host-time
+          mountPath: /etc/localtime
+        resources:
+          requests:
+            cpu:  2000m
+            memory: 4000Mi
+          limits:
+            cpu:  2000m
+            memory: 4000Mi
+      - name: filebeat
+        image: docker.registry:30018/zhiyu_containers/filebeat:0.0.1
+        volumeMounts:
+        - name: gateway-test-filebeat-config
+          mountPath: /filebeat
+        - name: app-log
+          mountPath: /log
+        - name: host-time
+          mountPath: /etc/localtime
+        resources:
+          requests:
+            cpu:  200m
+            memory: 400Mi
+          limits:
+            cpu:  200m
+            memory: 400Mi
+      volumes:
+      - name: gateway-test-filebeat-config
+        configMap:
+          name: gateway-test-filebeat-config
+      - name: app-log
+        emptyDir: {}
+      - name: host-time
+        hostPath:
+          path: /etc/localtime
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gateway-test-filebeat-config
+  namespace: vegas-test
+data:
+  filebeat.yml: |
+    #=========================== Filebeat inputs =============================
+    filebeat.inputs:
+    - type: log
+      enabled: true
+      paths:
+      - /log/*.log  #容器内部的log路径
+    #============================= Filebeat modules
+    filebeat.config.modules:
+      path: ${path.config}/modules.d/*.yml
+      reload.enabled: false
+    #==================== Elasticsearch template setting ==========================
+    setup.template.settings:
+      index.number_of_shards: 3
+    #================================ Outputs
+    output.logstash:
+    # The Logstash hosts
+      hosts: ["10.19.10.127:8402"]  #logstash地址
