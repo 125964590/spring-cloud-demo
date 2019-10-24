@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a5f6e3a5-5e99-4a18-b618-b44352aa7f91" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/GetBodyTestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/RequestRecordFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/TestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/TestGetBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/ClientDemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/handler/GreetingHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/handler/TestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/route/GreetingRouter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-cloud-client-demo/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/consul-test/consul-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/consul-test/consul-test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/CorsCustomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/CorsCustomFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/GlobalAuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/GlobalAuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/top/jbzm/cloud/hystrixdashboard/HystrixDashboardApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/hystrix-dashboard/src/main/java/top/jbzm/cloud/hystrixdashboard/HystrixDashboardApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/docker/dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/docker/spring-actuator-admin-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/spring-actuator-admin-demo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/spring-actuator-admin-demo-1.0-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-actuator-admin/target/test-classes/image_info.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-cloud-gateway/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/gateway-demo-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/gateway-demo-service/src/main/java/top/jbzm/demo/gatewaydemoservice/GatewayDemoServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/gateway-demo-service/src/main/java/top/jbzm/demo/gatewaydemoservice/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/gateway-demo-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-cloud-gateway/gateway-demo-service/src/test/java/top/jbzm/demo/gatewaydemoservice/GatewayDemoServiceApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="a5f6e3a5-5e99-4a18-b618-b44352aa7f91" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/eureka-client/target/" />
     <ignored path="$PROJECT_DIR$/eureka-consumer/target/" />
     <ignored path="$PROJECT_DIR$/eureka-consumer-feign/target/" />
@@ -91,13 +52,12 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/GatewayServiceNewApplication.java">
+        <entry file="file://$PROJECT_DIR$/eureka-consumer-ribbon/src/main/java/top/jbzm/cloud/demo/controller/DcController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="330">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
               <folding>
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jwt-security/src/main/java/top/jbzm/cloud/jwtsecurity/entity/user.java" />
         <option value="$PROJECT_DIR$/jwt-security/src/main/java/top/jbzm/cloud/jwtsecurity/entity/Base.java" />
         <option value="$PROJECT_DIR$/jwt-security/src/main/java/top/jbzm/cloud/jwtsecurity/config/j.java" />
         <option value="$PROJECT_DIR$/jwt-security/src/main/java/top/jbzm/cloud/jwtsecurity/config/AuditingConfig.java" />
@@ -184,7 +143,6 @@
         <option value="$PROJECT_DIR$/spring-actuator-admin/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-gateway-old/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/hystrix-dashboard/src/main/java/top/jbzm/cloud/hystrixdashboard/HystrixDashboardApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-client-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/ClientDemoApplication.java" />
         <option value="$PROJECT_DIR$/spring-cloud-client-demo/src/main/java/top/zhengyiwoaini/cloud/client/demo/handler/GreetingHandler.java" />
@@ -202,6 +160,8 @@
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/TestGetBody.java" />
         <option value="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/gateway-service/src/main/java/com/talbrain/vegas/gatewayservicenew/filter/TestFilter.java" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/src/main/java/top/jbzm/cloud/hystrixdashboard/HystrixDashboardApplication.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -244,104 +204,6 @@
             <path>
               <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="api-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="apigateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="route" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="spring-cloud-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="spring-cloud-client-demo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spring-cloud-demo" type="b2602c69:ProjectViewProjectNode" />
@@ -794,7 +656,7 @@
       <workItem from="1567504000732" duration="26555000" />
       <workItem from="1571630352448" duration="18305000" />
       <workItem from="1571737782203" duration="3491000" />
-      <workItem from="1571899255158" duration="2529000" />
+      <workItem from="1571899255158" duration="3153000" />
     </task>
     <task id="LOCAL-00001" summary="change all">
       <created>1525592460106</created>
@@ -831,13 +693,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140326000" />
+    <option name="totallyTimeSpent" value="140950000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" sideWeight="0.50333333" side_tool="true" weight="0.22638889" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49666667" visible="true" weight="0.33333334" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49666667" visible="true" weight="0.33333334" />
       <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Structure" order="3" sideWeight="0.50333333" side_tool="true" weight="0.22638889" />
       <window_info id="Image Layers" order="4" />
@@ -856,7 +719,7 @@
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32889733" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32889733" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.40304184" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="JRebel Console" order="14" side_tool="true" />
@@ -1099,55 +962,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.9.RELEASE/reactor-core-3.2.9.RELEASE-sources.jar!/reactor/core/publisher/FluxJust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="e#1515#1516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE-sources.jar!/reactor/netty/channel/MonoSendMany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE-sources.jar!/reactor/netty/channel/ChannelOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="237" selection-start-line="237" selection-end-line="237" />
-          <folding>
-            <element signature="e#4792#4793#0" expanded="true" />
-            <element signature="e#4826#4827#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE-sources.jar!/reactor/netty/http/HttpOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE-sources.jar!/reactor/netty/http/client/HttpClientOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="388" selection-start-line="388" selection-end-line="388" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/reactor-core/3.2.9.RELEASE/reactor-core-3.2.9.RELEASE-sources.jar!/reactor/core/publisher/MonoDefer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/projectreactor/netty/reactor-netty/0.8.8.RELEASE/reactor-netty-0.8.8.RELEASE-sources.jar!/reactor/netty/http/client/HttpClientConnect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -1500,6 +1314,57 @@
           <folding>
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#571#572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hystrix-dashboard/src/main/java/top/jbzm/cloud/hystrixdashboard/HystrixDashboardApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer-ribbon/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer-ribbon/src/main/java/top/jbzm/cloud/demo/DemoApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer-ribbon/src/main/java/top/jbzm/cloud/demo/controller/DcController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
