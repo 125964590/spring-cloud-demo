@@ -8,10 +8,7 @@ import org.apache.commons.io.IOUtils;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
-import org.springframework.core.io.buffer.DataBuffer;
-import org.springframework.core.io.buffer.DataBufferUtils;
-import org.springframework.core.io.buffer.NettyDataBuffer;
-import org.springframework.core.io.buffer.NettyDataBufferFactory;
+import org.springframework.core.io.buffer.*;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpRequestDecorator;
 import org.springframework.http.server.reactive.ServerHttpResponse;
@@ -21,6 +18,7 @@ import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.awt.image.DataBufferByte;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
@@ -47,18 +45,18 @@ public class TestFilter implements GlobalFilter, Ordered {
               dataBuffers -> {
                 NettyDataBufferFactory factory = (NettyDataBufferFactory) response.bufferFactory();
                 DataBuffer dataBuffer = factory.join(dataBuffers);
-                String bodyStr;
+                String bodyStr = null;
                 try {
                   bodyStr = IOUtils.toString(dataBuffer.asInputStream());
                   log.info(bodyStr);
                 } catch (IOException e) {
                   e.printStackTrace();
                 }
-                dataBuffer.readPosition(0);
                 ServerHttpRequest mutatedRequest =
                     new ServerHttpRequestDecorator(exchange.getRequest()) {
                       @Override
                       public Flux<DataBuffer> getBody() {
+                        dataBuffer.readPosition(0);
                         return Flux.just(dataBuffer);
                       }
                     };
