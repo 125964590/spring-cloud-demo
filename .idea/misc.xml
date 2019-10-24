@@ -13,7 +13,6 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-consumer-reibbon-hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
-        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/jwt-security/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>

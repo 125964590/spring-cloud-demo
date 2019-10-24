@@ -1,0 +1,9 @@
+server:
+  port: 8083
+eureka:
+  client:
+    service-url:
+      defaultZone: http://AILab:PaaS@127.0.0.1:8761/eureka/
+spring:
+  application:
+    name: aiclient-test

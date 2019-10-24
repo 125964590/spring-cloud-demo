@@ -1,6 +1,0 @@
-FROM openjdk:8-jdk-alpine
-RUN echo 'Asia/Shanghai' >/etc/timezone
-
-# copy arthas
-COPY *.jar /tmp/
-CMD /usr/bin/java ${JAVA_OPTS} -jar /tmp/*.jar

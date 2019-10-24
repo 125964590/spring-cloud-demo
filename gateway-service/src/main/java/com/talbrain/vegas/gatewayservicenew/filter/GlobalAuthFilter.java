@@ -34,7 +34,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.G
  * @author jbzm
  * @date 2019-06-12 17:52
  */
-@Component
+//@Component
 @AllArgsConstructor
 public class GlobalAuthFilter implements GlobalFilter, Ordered {
 

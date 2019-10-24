@@ -21,10 +21,11 @@
         <module>spring-cloud-gateway</module>
         <module>eureka-consumer-feign-hystrix</module>
         <module>consul-test</module>
-        <module>spring-cloud-gateway-old</module>
+        <module>eureka-client</module>
         <module>spring-admin-demo</module>
         <module>spring-actuator-admin</module>
         <module>gateway-service</module>
+        <module>spring-cloud-client-demo</module>
     </modules>
 
 

@@ -6,30 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-actuator-admin-demo" />
+        <module name="gateway-service" />
         <module name="jwt-security" />
-        <module name="hystrix-dashboard" />
         <module name="eureka-consumer-feign" />
         <module name="demo" />
-        <module name="consul-test" />
+        <module name="spring-actuator-admin-demo" />
         <module name="eureka-consumer-reibbon-hystrix" />
         <module name="eureka-client" />
         <module name="spring-cloud-gateway" />
         <module name="spring-actuator-admin" />
-        <module name="gateway-service" />
+        <module name="spring-cloud-client-demo" />
         <module name="eureka-consumer-feign-hystrix" />
+        <module name="spring-admin-demo" />
         <module name="eureka-server" />
         <module name="spring-cloud-gateway (1) (top.jbzm.demo)" />
-        <module name="api-gateway" />
-        <module name="spring-admin-demo" />
-        <module name="eureka-consumer-ribbon" />
         <module name="eureka-consumer" />
+        <module name="hystrix-dashboard" />
+        <module name="eureka-consumer-ribbon" />
+        <module name="consul-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="api-gateway" target="1.8" />
       <module name="consul-test" target="8" />
       <module name="demo" target="1.8" />
+      <module name="eureka-client" target="1.8" />
       <module name="eureka-consumer" target="1.8" />
       <module name="eureka-consumer-feign" target="1.8" />
       <module name="eureka-consumer-feign-hystrix" target="1.8" />
@@ -43,6 +44,7 @@
       <module name="spring-actuator-admin" target="1.8" />
       <module name="spring-actuator-admin-demo" target="1.8" />
       <module name="spring-admin-demo" target="1.8" />
+      <module name="spring-cloud-client-demo" target="1.8" />
       <module name="spring-cloud-gateway" target="1.8" />
       <module name="spring-cloud-gateway (1) (top.jbzm.demo)" target="1.8" />
     </bytecodeTargetLevel>

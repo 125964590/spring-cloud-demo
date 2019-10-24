@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-test/consul-test.iml" filepath="$PROJECT_DIR$/consul-test/consul-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/demo.iml" filepath="$PROJECT_DIR$/eureka-client/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" filepath="$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-feign/eureka-consumer-feign.iml" filepath="$PROJECT_DIR$/eureka-consumer-feign/eureka-consumer-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/eureka-consumer-feign-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/eureka-consumer-feign-hystrix.iml" />
@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin.iml" filepath="$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin-demo.iml" filepath="$PROJECT_DIR$/spring-actuator-admin/spring-actuator-admin-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-admin-demo/spring-admin-demo.iml" filepath="$PROJECT_DIR$/spring-admin-demo/spring-admin-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-client-demo/spring-cloud-client-demo.iml" filepath="$PROJECT_DIR$/spring-cloud-client-demo/spring-cloud-client-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway-old/spring-cloud-gateway (1) (top.jbzm.demo).iml" filepath="$PROJECT_DIR$/spring-cloud-gateway-old/spring-cloud-gateway (1) (top.jbzm.demo).iml" />
     </modules>

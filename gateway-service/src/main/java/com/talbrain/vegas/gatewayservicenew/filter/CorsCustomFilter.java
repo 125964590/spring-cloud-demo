@@ -21,7 +21,7 @@ import static org.springframework.web.cors.CorsConfiguration.ALL;
  * @author jbzm
  * @date 2019-06-12 00:53
  */
-@Configuration
+//@Configuration
 public class CorsCustomFilter implements WebFilter, Ordered {
 
   @Override

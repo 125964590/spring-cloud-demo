@@ -5,7 +5,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://admin:admin@127.0.0.1:8761/eureka
+      defaultZone: http://AILab:PaaS@127.0.0.1:8761/eureka/
 spring:
   cloud:
     gateway:
@@ -45,6 +45,12 @@ spring:
             - Path=/jbzm/**
           filters:
             - StripPrefix=1
+        - id: aiclient-test
+          uri: lb://aiclient-test
+          predicates:
+            - Path=/aiclient-test/**
+          filters:
+            - StripPrefix=1
         - id: jbzm-log
           uri: lb://jbzm-log
           predicates:
@@ -55,13 +61,6 @@ spring:
               args:
                 name: fallbackcmd
                 fallbackUri: forward:/fallback
-hystrix:
-  command:
-    fallbackcmd:
-      execution:
-        isolation:
-          thread:
-            timeoutInMilliseconds: 10000
 
 #custom
 gateway:
@@ -72,3 +71,4 @@ gateway:
       - /api/auth/**
       - /jbzm/**
       - /log/**
+      - /client-test/**
