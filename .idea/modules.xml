@@ -5,11 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/consul-test/consul-test.iml" filepath="$PROJECT_DIR$/consul-test/consul-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/demo.iml" filepath="$PROJECT_DIR$/eureka-client/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" filepath="$PROJECT_DIR$/eureka-consumer/eureka-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-feign/eureka-consumer-feign.iml" filepath="$PROJECT_DIR$/eureka-consumer-feign/eureka-consumer-feign.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/eureka-consumer-feign-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/eureka-consumer-feign-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-consumer-reibbon-hystrix/eureka-consumer-reibbon-hystrix.iml" filepath="$PROJECT_DIR$/eureka-consumer-reibbon-hystrix/eureka-consumer-reibbon-hystrix.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-consumer-ribbon/eureka-consumer-ribbon.iml" filepath="$PROJECT_DIR$/eureka-consumer-ribbon/eureka-consumer-ribbon.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" filepath="$PROJECT_DIR$/hystrix-dashboard/hystrix-dashboard.iml" />

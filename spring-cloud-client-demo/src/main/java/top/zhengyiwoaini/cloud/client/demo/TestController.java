@@ -1,9 +1,8 @@
 package top.zhengyiwoaini.cloud.client.demo;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
+import top.zhengyiwoaini.cloud.client.demo.service.TestService;
 
 /**
  * @author jbzm
@@ -11,11 +10,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-public class TestController {
+public class TestController implements TestService {
 
-  @PostMapping("bodyTest")
-  public Object bodyTest(@RequestBody Object object) {
-    log.info(object.toString());
-    return object;
-  }
+    @Override
+    public String bodyTest() {
+        log.info("lol");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "lol";
+    }
 }

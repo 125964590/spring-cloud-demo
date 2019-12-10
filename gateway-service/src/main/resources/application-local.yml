@@ -51,6 +51,12 @@ spring:
             - Path=/aiclient-test/**
           filters:
             - StripPrefix=1
+        - id: eureka-consumer-feign
+          uri: lb://eureka-consumer-feign
+          predicates:
+            - Path=/eureka-consumer-feign/**
+          filters:
+            - StripPrefix=1
         - id: jbzm-log
           uri: lb://jbzm-log
           predicates:

@@ -4,7 +4,10 @@ server:
 spring:
   application:
     name: actuator-demo
-
+  security:
+    user:
+      name: admin
+      password: admin@paas
 eureka:
   client:
     service-url:

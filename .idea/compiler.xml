@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gateway-service" />
         <module name="jwt-security" />
+        <module name="hystrix-dashboard" />
         <module name="eureka-consumer-feign" />
         <module name="demo" />
         <module name="spring-actuator-admin-demo" />
@@ -15,15 +16,11 @@
         <module name="eureka-client" />
         <module name="spring-cloud-gateway" />
         <module name="spring-actuator-admin" />
+        <module name="consul-test" />
         <module name="spring-cloud-client-demo" />
-        <module name="eureka-consumer-feign-hystrix" />
-        <module name="spring-admin-demo" />
         <module name="eureka-server" />
         <module name="spring-cloud-gateway (1) (top.jbzm.demo)" />
-        <module name="eureka-consumer" />
-        <module name="hystrix-dashboard" />
-        <module name="eureka-consumer-ribbon" />
-        <module name="consul-test" />
+        <module name="spring-admin-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">

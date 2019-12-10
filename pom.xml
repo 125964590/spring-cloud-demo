@@ -18,13 +18,12 @@
 
     <modules>
         <module>eureka-server</module>
-        <module>spring-cloud-gateway</module>
-        <module>eureka-consumer-feign-hystrix</module>
         <module>consul-test</module>
         <module>eureka-client</module>
         <module>spring-admin-demo</module>
         <module>spring-actuator-admin</module>
         <module>gateway-service</module>
+        <module>eureka-consumer-feign</module>
         <module>spring-cloud-client-demo</module>
     </modules>
 
