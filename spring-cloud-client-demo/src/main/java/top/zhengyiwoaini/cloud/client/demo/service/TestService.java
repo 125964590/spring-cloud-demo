@@ -1,6 +1,7 @@
 package top.zhengyiwoaini.cloud.client.demo.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 /**
@@ -11,4 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public interface TestService {
   @PostMapping("bodyTest")
   String bodyTest();
+
+  @GetMapping("error01")
+  String error01();
 }

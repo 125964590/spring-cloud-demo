@@ -67,6 +67,27 @@ spring:
               args:
                 name: fallbackcmd
                 fallbackUri: forward:/fallback
+        - id: svc
+          uri: lb://svcdemo-server
+          predicates:
+            - Path=/svc-tmp/**
+          filters:
+            - StripPrefix=1
+            - name: Hystrix
+              args:
+                name: svcfallbacktest
+                fallbackUri: forward:/fallback
+
+hystrix:
+  command:
+    svcfallbacktest:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+          strategy: EMAPHORE
+          semaphore:
+            maxConcurrentRequests: 1000
 
 #custom
 gateway:
@@ -78,3 +99,4 @@ gateway:
       - /jbzm/**
       - /log/**
       - /client-test/**
+
