@@ -8,23 +8,25 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gateway-service" />
         <module name="jwt-security" />
-        <module name="hystrix-dashboard" />
+        <module name="base-client" />
         <module name="eureka-consumer-feign" />
         <module name="demo" />
-        <module name="spring-actuator-admin-demo" />
+        <module name="consul-test" />
         <module name="eureka-consumer-reibbon-hystrix" />
         <module name="eureka-client" />
         <module name="spring-cloud-gateway" />
         <module name="spring-actuator-admin" />
-        <module name="consul-test" />
+        <module name="spring-actuator-admin-demo" />
         <module name="spring-cloud-client-demo" />
         <module name="eureka-server" />
         <module name="spring-cloud-gateway (1) (top.jbzm.demo)" />
         <module name="spring-admin-demo" />
+        <module name="hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="api-gateway" target="1.8" />
+      <module name="base-client" target="1.8" />
       <module name="consul-test" target="8" />
       <module name="demo" target="1.8" />
       <module name="eureka-client" target="1.8" />
@@ -48,6 +50,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base-client" options="-parameters" />
       <module name="jwt-security" options="-parameters" />
       <module name="spring-actuator-admin" options="-parameters" />
       <module name="spring-actuator-admin-demo" options="-parameters" />

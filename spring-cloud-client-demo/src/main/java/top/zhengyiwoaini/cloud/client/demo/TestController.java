@@ -17,11 +17,6 @@ public class TestController implements TestService {
   @Override
   public String bodyTest() {
     log.info("lol");
-    try {
-      Thread.sleep(100000);
-    } catch (InterruptedException e) {
-      e.printStackTrace();
-    }
     return "lol";
   }
 
