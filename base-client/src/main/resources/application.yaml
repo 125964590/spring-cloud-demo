@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://AILab:PaaS@godhand-eureka-master:8761/eureka/,http://AILab:PaaS@godhand-eureka-slave1:8761/eureka/,http://AILab:PaaS@godhand-eureka-slave2:8761/eureka
+  instance:
+    hostname: biz-health
+server:
+  port: 10088
+spring:
+  application:
+    name: BIZ-HEALTH
+
+

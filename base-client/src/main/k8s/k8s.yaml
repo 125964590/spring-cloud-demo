@@ -1,0 +1,45 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: biz-health
+  namespace: test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: biz-health
+  template:
+    metadata:
+      labels:
+        run: biz-health
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: node/type
+                    operator: In
+                    values:
+                      - AIDATA
+      containers:
+        - name: biz-health-containers
+          image: registry.cn-beijing.aliyuncs.com/ailab-paas/paas-pre-base-client-image:0.0.1-SNAPSHOT
+          volumeMounts:
+            - name: host-time
+              mountPath: /etc/localtime
+          ports:
+            - containerPort: 10088
+          resources:
+            requests:
+              cpu:  1
+              memory: 1024Mi
+            limits:
+              cpu:  1
+              memory: 1024Mi
+      imagePullSecrets:
+        - name: godhand-regcred
+      volumes:
+        - name: host-time
+          hostPath:
+            path: /etc/localtime
